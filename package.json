@@ -1,0 +1,36 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon --exec babel-node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanaratjaruenying/todolist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanaratjaruenying/todolist/issues"
+  },
+  "homepage": "https://github.com/thanaratjaruenying/todolist#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^22.4.3",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^22.4.3",
+    "node-mocks-http": "^1.5.8",
+    "nodemon": "^1.17.4"
+  }
+}
