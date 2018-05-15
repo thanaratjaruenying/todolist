@@ -2,10 +2,11 @@
   "name": "todolist",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "jest",
-    "dev": "nodemon --exec babel-node ./index.js"
+    "start": "nodemon --exec babel-node ./src/index.js",
+    "build": "npx babel src --out-dir lib --ignore spec.js,test.js"
   },
   "repository": {
     "type": "git",

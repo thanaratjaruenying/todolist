@@ -70,7 +70,6 @@ describe('Test simulate game', async () => {
     await controllers.editTask(request, response);
     const data = response._getData();
     expect(response._getStatusCode()).toBe(200);
-    console.log(data);
     done();
   });
 
