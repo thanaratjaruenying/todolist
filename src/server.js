@@ -25,7 +25,7 @@ export default class Server {
     const PORT = process.env.PORT || 3001;
   
     mongoose.Promise = global.Promise;
-    mongoose.connect('mongodb://localhost/Todolist'); 
+    mongoose.connect('mongodb://mongo/Todolist'); 
     mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
     app.use(bodyParser.urlencoded({extended: true}));
