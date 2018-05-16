@@ -23,9 +23,10 @@ export default class Server {
   setup() {
     const app = express();
     const PORT = process.env.PORT || 3001;
-  
+    const DATABASE_NAME = process.env.DATABASE_NAME || 'localhost';
+
     mongoose.Promise = global.Promise;
-    mongoose.connect('mongodb://mongo/Todolist'); 
+    mongoose.connect(`mongodb://${DATABASE_NAME}/Todolist`);
     mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
     app.use(bodyParser.urlencoded({extended: true}));

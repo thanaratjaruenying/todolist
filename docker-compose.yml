@@ -8,6 +8,8 @@ services:
       - "3001:3001"
     links:
       - mongo
+    environment:
+      - DATABASE_NAME=mongo
   mongo:
     container_name: mongo
     image: mongo
