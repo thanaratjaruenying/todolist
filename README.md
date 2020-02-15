@@ -90,7 +90,7 @@ content | String
 
 Key | Value 
 ------------ | -------------
-id | ObjectId(required)
+id | ObjectId (required)
 status | String(required) ['pending', 'done', 'cancel']
 
 ```javascript
